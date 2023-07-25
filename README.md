@@ -1,6 +1,6 @@
 # makesense_csv_to_coco
 
-Modify a single csv result created with [makeense.ai](https://github.com/SkalskiP/make-sense) to coco format.
+Modify a single csv result created with [makeense.ai](https://github.com/SkalskiP/make-sense) to coco format.  
 Results from makesense do not include category information.  
 A csv file with category information is required.  
 
