@@ -12,7 +12,7 @@ python main.py
 ## sample data
 The data used as an example is the COCO2017 Val 000000000139.jpg and the modified JSON
 
-### [categories csv sample](coco_sample\annotations\categories.csv)
+### [categories csv sample](coco_sample/annotations/categories.csv)
 
 |  | supercategory | id | name |
 |---|---|---|---|
@@ -27,7 +27,7 @@ The data used as an example is the COCO2017 Val 000000000139.jpg and the modifie
 | 8 | indoor | 85 | clock |
 | 9 | indoor | 86 | vase |
 
-### [sample makesense result single csv](coco_sample\annotations\labels_my-project-name_2023-07-25-03-19-19.csv)
+### [sample makesense result single csv](coco_sample/annotations/labels_my-project-name_2023-07-25-03-19-19.csv)
 
 | label_name | bbox_x | bbox_y | bbox_width | bbox_height | image_name | image_width | image_height |
 |---|---|---|---|---|---|---|---|
@@ -53,4 +53,4 @@ The data used as an example is the COCO2017 Val 000000000139.jpg and the modifie
 | dining table | 321 | 231 | 126 | 89 | 000000000139.jpg | 640 | 426 |
 
 ## Result coco format json
-[Result coco format json](coco_sample\annotations\annotation.json)
+[Result coco format json](coco_sample/annotations/annotation.json)
