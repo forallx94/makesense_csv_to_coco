@@ -29,7 +29,7 @@ def makesense_single_csv_to_coco_json(
     categories_df = pd.read_csv(categories_csv_path,index_col=0)
 
     images_info = []
-    pog_categories = []
+    categories = []
     annotations_info = []
 
     unique_images = df.image_name.unique()
@@ -37,7 +37,7 @@ def makesense_single_csv_to_coco_json(
 
     # categories setup
     for num, category_ in categories_df.iterrows():
-        pog_categories.append({key_ : info_ for key_, info_ in category_.items()})
+        categories.append({key_ : info_ for key_, info_ in category_.items()})
 
     categories_dict = { category['name'] : category  for _, category in categories_df.iterrows()}
 
@@ -74,7 +74,7 @@ def makesense_single_csv_to_coco_json(
     # result json setup
     coco_format = OrderedDict()
     coco_format['images'] = images_info
-    coco_format['categories'] = pog_categories
+    coco_format['categories'] = categories
     coco_format['annotations'] = annotations_info
 
     with open(coco_result_save_path,'w') as js:
